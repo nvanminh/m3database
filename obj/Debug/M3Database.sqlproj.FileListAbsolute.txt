@@ -1,0 +1,5 @@
+D:\Source\M3Database\bin\Debug\M3Database.dacpac
+D:\Source\M3Database\obj\Debug\M3Database.dll
+D:\Source\M3Database\obj\Debug\M3Database.pdb
+D:\Source\M3Database\bin\Debug\M3Database.dll
+D:\Source\M3Database\bin\Debug\M3Database.pdb

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>M3_Development</TargetDatabaseName>
+    <DeployScriptFileName>M3_Development.sql</DeployScriptFileName>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+    <TargetConnectionString>Data Source=.;Persist Security Info=True;User ID=money3;Password=12345678@X;Pooling=False</TargetConnectionString>
+    <ScriptDatabaseOptions>True</ScriptDatabaseOptions>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <IgnoreRoleMembership>False</IgnoreRoleMembership>
+    <IgnoreAuthorizer>False</IgnoreAuthorizer>
+    <DoNotAlterReplicatedObjects>False</DoNotAlterReplicatedObjects>
+  </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="M3_Development">
+      <Value>M3_Development</Value>
+    </SqlCmdVariable>  
+  </ItemGroup>
+</Project>

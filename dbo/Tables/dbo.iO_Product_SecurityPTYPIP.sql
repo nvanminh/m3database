@@ -1,0 +1,42 @@
+CREATE TABLE [dbo].[iO_Product_SecurityPTYPIP]
+(
+[RSPp_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[RSPp_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_IDLink_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_IDLink_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_SeqNumber] [bigint] NOT NULL IDENTITY(1, 1) NOT FOR REPLICATION,
+[RSPp_IDLink_RSP] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[RSPp_PIPInsured] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_InsuranceAmount] [float] NULL,
+[RSPp_InsuranceExpiry] [datetime] NULL,
+[RSPp_Agent1] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_Apprasial_1_Low] [float] NULL,
+[RSPp_Apprasial_1_High] [float] NULL,
+[RSPp_Agent2] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_Apprasial_2_Low] [float] NULL,
+[RSPp_Apprasial_2_High] [float] NULL,
+[RSPp_Valuer1] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_Valuation_1_FS] [float] NULL,
+[RSPp_Valuation_1_MV] [float] NULL,
+[RSPp_ValuationDate1] [datetime] NULL,
+[RSPp_Valuer2] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_Valuation_2_MV] [float] NULL,
+[RSPp_Valuation_2_FS] [float] NULL,
+[RSPp_ValuationDate2] [datetime] NULL,
+[RSPp_Valuer3] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_Valuation_3_FS] [float] NULL,
+[RSPp_Valuation_3_MV] [float] NULL,
+[RSPp_ValuationDate3] [datetime] NULL,
+[RSPp_AuctionDate] [datetime] NULL,
+[RSPp_AuctionSold] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_SoldDate] [datetime] NULL,
+[RSPp_SoldAmount] [float] NULL,
+[RSPp_ListedSaleDate] [datetime] NULL,
+[RSPp_SaleType] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RSPp_ListedAmount] [float] NULL,
+[RSPp_AuctionReserve] [float] NULL,
+[RSPp_PrivateTreaty] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[iO_Product_SecurityPTYPIP] ADD CONSTRAINT [PK_iO_Product_SecurityPTYPiP] PRIMARY KEY CLUSTERED  ([RSPp_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
+GO

@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[iO_MOR_ExistingMortgages]
+(
+[MORem_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_Ownership] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_Version] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_Sync] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_Code] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_Type] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_IDLink_MORcv] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_INTERESTRATE] [decimal] (18, 0) NULL,
+[MORem_LOANACCOUNTNUMBER] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_MONTHLYREPAYMENT] [decimal] (18, 0) NULL,
+[MORem_ORIGINALLOANAMOUNT] [decimal] (18, 0) NULL,
+[MORem_ORIGINALAMORTIZATIONMONTHS] [tinyint] NULL,
+[MORem_ORIGINALAMORTIZATIONYEARS] [tinyint] NULL,
+[MORem_OUTSTANDINGBALANCE] [decimal] (18, 0) NULL,
+[MORem_PURPOSEOFLOAN] [int] NULL,
+[MORem_DISCHARGEDATE] [smalldatetime] NULL,
+[MORem_FUTURESTATUS] [int] NULL,
+[MORem_STARTDATE] [smalldatetime] NULL,
+[MORem_LENDERNAME] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_ADDITIONALDETAILS] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_CHARGETYPE] [int] NULL,
+[MORem_REPAYMENTTYPE] [int] NULL,
+[MORem_INSURANCECERTIFICATENUMBER] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORem_PREVIOUSCLOSINGDATE] [smalldatetime] NULL,
+[MORem_PREVIOUSSALEPRICE] [decimal] (18, 0) NULL,
+[MORem_INSURERTYPE] [int] NULL
+) ON [PRIMARY]
+GO

@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[iO_EFX_Garnishment]
+(
+[EFXGAR_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Code] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Type] [int] NULL,
+[EFXGAR_IDUser] [int] NULL,
+[EFXGAR_IDLink_EFXRQ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_IDLink_CMR] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_SeqNumber] [bigint] NOT NULL IDENTITY(1, 1),
+[EFXGAR_IDLink_EFXSBJ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_DateFiled] [int] NULL,
+[EFXGAR_CourtID_CustomerNumber] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_CourtID_Name] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_CaseNumber] [varchar] (42) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Amount] [int] NULL,
+[EFXGAR_DateSatisfied] [int] NULL,
+[EFXGAR_VerificationDate] [int] NULL,
+[EFXGAR_Plaintiff] [varchar] (42) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Garnishee] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Defendant] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_UpdateSource_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_UpdateSource_description] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_NarrativeCode_1] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_NarrativeCode_2] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXGAR_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[iO_EFX_Bankruptcies]
+(
+[EFXBKP_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Code] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Type] [int] NULL,
+[EFXBKP_IDUser] [int] NULL,
+[EFXBKP_IDLink_EFXRQ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_IDLink_CMR] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_SeqNumber] [bigint] NOT NULL IDENTITY(1, 1),
+[EFXBKP_IDLink_EFXSBJ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_DateFiled] [int] NULL,
+[EFXBKP_CourtId_CustomerNumber] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_CourtId_Name] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_CaseNumberAndTrustee] [int] NULL,
+[EFXBKP_Type_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Type_description] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Filer_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Filer_description] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_IntentOrDisposition_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_IntentOrDisposition_description] [varchar] (45) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Date] [int] NULL,
+[EFXBKP_LiabilityAmount] [int] NULL,
+[EFXBKP_AssetAmount] [int] NULL,
+[EFXBKP_UpdateSource_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_UpdateSource_description] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_NarrativeCode_1] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_NarrativeCode_2] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBKP_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

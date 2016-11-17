@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[iO_EFX_Subject]
+(
+[EFXSBJ_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_Code] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_Type] [int] NULL,
+[EFXSBJ_IDUser] [int] NULL,
+[EFXSBJ_IDLink_EFXRQ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_IDLink_CMR] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_SeqNumber] [bigint] NOT NULL IDENTITY(1, 1),
+[EFXSBJ_UniqueNumber] [int] NULL,
+[EFXSBJ_LastName] [varchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_FirstName] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_MiddleName] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_Suffix_code] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_Suffix_description] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_SocialInsuranceNumber] [varchar] (9) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_DateOfBirth] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_DateOfBirth_type] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_DateOfDeath] [int] NULL,
+[EFXSBJ_MaritalStatus_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_MaritalStatus_description] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_SpouseName] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_SpouseSIN] [varchar] (9) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXSBJ_NumberOfDependents] [int] NULL,
+[EFXSBJ_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[iO_FNF_ErrorCodes]
+(
+[FNF_ID] [int] NOT NULL IDENTITY(1, 1) NOT FOR REPLICATION,
+[FNF_Number] [int] NULL,
+[FNF_Code] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FNF_Description] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[iO_FNF_ErrorCodes] ADD CONSTRAINT [PK_iO_FNF_ErrorCodes] PRIMARY KEY CLUSTERED  ([FNF_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
+GO

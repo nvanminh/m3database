@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[iO_EFX_BankAccount]
+(
+[EFXBA_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_Code] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_Type] [int] NULL,
+[EFXBA_IDUser] [int] NULL,
+[EFXBA_IDLink_EFXRQ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_IDLink_CMR] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_SeqNumber] [bigint] NOT NULL IDENTITY(1, 1),
+[EFXBA_IDLink_EFXSBJ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_BankAccount_code] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_BankAccount_description] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_DateReported] [int] NULL,
+[EFXBA_CreditorId_CustomerNumber] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_CreditorId_Name] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_CreditorId_AreaCode] [int] NULL,
+[EFXBA_CreditorId_Number] [int] NULL,
+[EFXBA_CreditorId_Extension] [int] NULL,
+[EFXBA_AccountNumber] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_AccountNumber_mnemonic] [varchar] (6) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_FigureAmount] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_DateOpened] [int] NULL,
+[EFXBA_AccountType_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_AccountType_description] [varchar] (41) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_Status_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_Status_description] [varchar] (45) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_NumberOfNSF] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXBA_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

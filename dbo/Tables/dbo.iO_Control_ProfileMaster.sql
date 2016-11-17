@@ -1,0 +1,81 @@
+CREATE TABLE [dbo].[iO_Control_ProfileMaster]
+(
+[XPF_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[XPF_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[XPF_IDLink_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_FacilityNote] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_SearchText] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_SearchNumeric] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_TabHeading] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_HomePage] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_ProductSelect] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_XSYSct] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDUser] [int] NULL,
+[XPF_Type] [int] NULL,
+[XPF_AccountType] [int] NULL,
+[XPF_Detail] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_ControlBar_Name] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_ProductCentreFilter] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_ControlBar_Add] [int] NULL,
+[XPF_SuperUser] [bit] NULL,
+[XPF_UseGroups] [bit] NULL,
+[XPF_HideClientCentre] [bit] NULL,
+[XPF_HideClientLabel] [bit] NULL,
+[XPF_HideClientSearch] [bit] NULL,
+[XPF_HideProductCentre] [bit] NULL,
+[XPF_HideControlCentre] [bit] NULL,
+[XPF_SecurityValue] [int] NULL,
+[XPF_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_ShowAccountLinks] [bit] NULL,
+[XPF_IDLink_ClientLabel] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_StylePage] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_AllowClientWebAccess] [bit] NULL,
+[XPF_AllowClientMobileAccess] [bit] NULL,
+[XPF_AllowBrokerWebAccess] [bit] NULL,
+[XPF_AllowBrokerMobileAccess] [bit] NULL,
+[XPF_AllowSystemWebAccess] [bit] NULL,
+[XPF_AllowSystemMobileAccess] [bit] NULL,
+[XPF_IDLink_ClientSelectDisplay] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_AllowAgentMobileAccess] [bit] NULL,
+[XPF_AllowPOSMobileAccess] [bit] NULL,
+[XPF_AllowCloudMobileAccess] [bit] NULL,
+[XPF_AllowPortfolioMobileAccess] [bit] NULL,
+[XPF_IDLink_LogoutPage] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_WEBHomePage] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_WEBLogoutPage] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_HelpPage] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_ActionMenu] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_Mobile_ID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_Mobile_SecurityType] [int] NULL,
+[XPF_Mobile_BrandFile_01] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_Mobile_BrandFile_02] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_Mobile_SecurityReadOnly] [bit] NULL,
+[XPF_IDLink_PanelClassName] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_PanelClientName] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_PanelProductName] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_XCZ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_SMTPServer] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_SMTPUserID] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_SMTPUserPwd] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_SMSUrl] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_SMSUserID] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_SMSUserPWD] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_SMSSecret] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_2FARequired] [bit] NULL,
+[XPF_2FAUseMobile] [bit] NULL,
+[XPF_2FAUseEMail] [bit] NULL,
+[XPF_IDLink_XPF2] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XPF_IDLink_Library] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[iO_Control_ProfileMaster] ADD CONSTRAINT [PK_iO_Control_ProfileMaster] PRIMARY KEY CLUSTERED  ([XPF_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [NonClusteredIndex-20131207-104246_IDUSER] ON [dbo].[iO_Control_ProfileMaster] ([XPF_IDUser]) WITH (FILLFACTOR=85) ON [PRIMARY]
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'Primary Key.', 'SCHEMA', N'dbo', 'TABLE', N'iO_Control_ProfileMaster', 'COLUMN', N'XPF_ID'
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'Used to compare records in Replication process.', 'SCHEMA', N'dbo', 'TABLE', N'iO_Control_ProfileMaster', 'COLUMN', N'XPF_IDLink_Version'
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'Redundant.', 'SCHEMA', N'dbo', 'TABLE', N'iO_Control_ProfileMaster', 'COLUMN', N'XPF_Ownership'
+GO

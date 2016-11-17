@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[iO_EFX_Employment]
+(
+[EFXEmp_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Code] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_IDLink_EFXRQ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_IDLink_CMR] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Type] [int] NULL,
+[EFXEmp_IDUser] [int] NULL,
+[EFXEmp_SeqNumber] [bigint] NOT NULL IDENTITY(1, 1),
+[EFXEmp_IDLink_EFXSBJ] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Employment_code] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Employment_description] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Occupation] [varchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Employer] [varchar] (34) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_City] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Province_code] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Province_description] [varchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_DateEmployed] [int] NULL,
+[EFXEmp_DateLeft] [int] NULL,
+[EFXEmp_Verification_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Verification_description] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Date] [int] NULL,
+[EFXEmp_SalaryAmount] [int] NULL,
+[EFXEmp_SalaryVerification_code] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_SalaryVerification_description] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFXEmp_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

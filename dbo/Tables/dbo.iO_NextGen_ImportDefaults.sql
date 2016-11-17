@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[iO_NextGen_ImportDefaults]
+(
+[NGI_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[NGI_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[NGI_SeqNumber] [int] NOT NULL IDENTITY(1, 1),
+[NGI_IDLink_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_IDLink_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_ForeignKey_Application] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_ForeignKey_Client] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_ForeignKey_Loan] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_Status_Received] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_Status_Approved] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_Status_Settled] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_Status_Current] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_ClientClassIndividual] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_ClientClassCompany] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_DrawdownTransaction] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_JointRelationshipKey] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_Balance_Principle] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_Balance_Application] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_Balance_Approval] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_Type] [int] NULL,
+[NGI_IDUser] [int] NULL,
+[NGI_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_ClientAssociation_Primary] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_ClientAssociation_Borrower] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_ClientAssociation_Guarantor] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_PaymentCalculation] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NGI_DisbursementTransaction] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

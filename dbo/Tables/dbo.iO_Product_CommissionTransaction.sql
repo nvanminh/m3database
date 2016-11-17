@@ -1,0 +1,51 @@
+CREATE TABLE [dbo].[iO_Product_CommissionTransaction]
+(
+[RCT_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[RCT_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_XCS] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_RMR] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_ApprovedAmount] [float] NULL,
+[RCT_PrincipalBalance] [float] NULL,
+[RCT_ScheduleBalance] [float] NULL,
+[RCT_ArrearsBalance] [float] NULL,
+[RCT_Processed] [bit] NULL,
+[RCT_DelRelProcessed] [bit] NULL,
+[RCT_LastPayment] [datetime] NULL,
+[RCT_NextPayment] [datetime] NULL,
+[RCT_NumberOfDays] [int] NULL,
+[RCT_NewStatus_IDLink_XCS] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_PaymentTypeValue] [int] NULL,
+[RCT_PaymentPercentage] [float] NULL,
+[RCT_PayableAmount] [float] NULL,
+[RCT_OverrideAmount] [float] NULL,
+[RCT_OverrideZero] [bit] NULL,
+[RCT_SeqNumber] [bigint] NULL,
+[RCT_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_StatementDate] [datetime] NULL,
+[RCT_IDLink_RTM] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_Pay_CMR] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_Pay_XLK] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_Pay_XTRM] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_Collect_CMR] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_Collect_XLK] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_Collect_XTRM] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_XSU] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_XFSCm] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_XRBl] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_IDLink_XRRs] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RCT_Type] [int] NULL,
+[RCT_PaymentType] [int] NULL,
+[RCT_DateCreate] [datetime] NULL,
+[RCT_DateDue] [datetime] NULL,
+[RCT_DateStatement] [datetime] NULL,
+[RCT_Value] [float] NULL,
+[RCT_OriginalAmount] [float] NULL,
+[RCT_OriginalBPS] [float] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[iO_Product_CommissionTransaction] ADD CONSTRAINT [PK_iO_Product_CommissionTransaction] PRIMARY KEY CLUSTERED  ([RCT_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [IX_iO_Product_CommissionTransaction] ON [dbo].[iO_Product_CommissionTransaction] ([RCT_IDLink_RMR]) WITH (FILLFACTOR=85) ON [PRIMARY]
+GO

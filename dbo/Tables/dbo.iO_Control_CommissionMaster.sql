@@ -1,0 +1,43 @@
+CREATE TABLE [dbo].[iO_Control_CommissionMaster]
+(
+[XCOMm_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[XCOMm_Ownership] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Version] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Sync] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_XSCc] [int] NULL,
+[XCOMm_IDLink_Code] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Level] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_XLK] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_Detail] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_Type] [int] NULL,
+[XCOMm_IDUser] [int] NULL,
+[XCOMm_DateStart] [datetime] NULL,
+[XCOMm_DateEffective] [datetime] NULL,
+[XCOMm_DateEnd] [datetime] NULL,
+[XCOMm_Model] [int] NULL,
+[XCOMm_Unit] [float] NULL,
+[XCOMm_Payment] [int] NULL,
+[XCOMm_AllCategory] [bit] NULL,
+[XCOMm_SecurityValue] [int] NULL,
+[XCOMm_Note] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_AllBrand] [bit] NULL,
+[XCOMm_AllFeature] [bit] NULL,
+[XCOMm_AllPurpose] [bit] NULL,
+[XCOMm_AllState] [bit] NULL,
+[XCOMm_IDLink_Brand] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Model] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Global_XLK] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Volume_XLK] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Ratio_XLK] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_PaymentPeriod] [int] NULL,
+[XCOMm_PaymentFrequency] [int] NULL,
+[XCOMm_PaymentUnit] [float] NULL,
+[XCOMm_IDLink_Trailer] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Upfront] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_Billing] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_ModelType] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XCOMm_IDLink_ModelRenewal] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[iO_Control_CommissionMaster] ADD CONSTRAINT [PK_iO_Control_CommissionMaster] PRIMARY KEY CLUSTERED  ([XCOMm_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
+GO

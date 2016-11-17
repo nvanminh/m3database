@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[iO_MOR_Employment]
+(
+[MORemp_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_Ownership] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_Version] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_Sync] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_Code] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_Type] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_IDLink_MORcv] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_EMPLOYMENTTYPE] [int] NULL,
+[MORemp_EMPLOYMENTSTATUS] [int] NULL,
+[MORemp_DATELEFTORCEASEDTRADING] [smalldatetime] NULL,
+[MORemp_DATESTARTEDORESTABLISHED] [smalldatetime] NULL,
+[MORemp_INDUSTRYTYPE] [int] NULL,
+[MORemp_OCCUPATIONTYPE] [int] NULL,
+[MORemp_JOBTITLE] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_COMPANYNAME] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_TELEPHONENUMBER] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_MAINSTATUS] [bit] NULL,
+[MORemp_POSTALCODE] [varchar] (8) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_APTORUNITNUMBER] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_BUILDINGORHOUSENUMBER] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_STREET] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_STREETDIRECTION] [int] NULL,
+[MORemp_STREETTYPE] [int] NULL,
+[MORemp_RRORPOBOXNUMBER] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_TOWN] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MORemp_PROVINCESEQNO] [int] NULL,
+[MORemp_COUNTRY] [int] NULL
+) ON [PRIMARY]
+GO
