@@ -3,3 +3,8 @@ D:\Source\M3Database\obj\Debug\M3Database.dll
 D:\Source\M3Database\obj\Debug\M3Database.pdb
 D:\Source\M3Database\bin\Debug\M3Database.dll
 D:\Source\M3Database\bin\Debug\M3Database.pdb
+D:\Money3\m3database\bin\Debug\M3Database.dacpac
+D:\Money3\m3database\bin\Debug\M3Database.dll
+D:\Money3\m3database\bin\Debug\M3Database.pdb
+D:\Money3\m3database\obj\Debug\M3Database.dll
+D:\Money3\m3database\obj\Debug\M3Database.pdb
