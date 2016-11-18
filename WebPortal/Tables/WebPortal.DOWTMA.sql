@@ -1,0 +1,20 @@
+CREATE TABLE [WebPortal].[DOWTMA]
+(
+[DOWTMA_ID] [int] NOT NULL IDENTITY(1, 1),
+[DOWTMA_CMR_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DOWTMA_XRP_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DOWTMA_SecurityToken] [varchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DOWTMA_DateCreated] [datetime] NULL,
+[DOWTMA_DateExpired] [datetime] NULL,
+[DOWTMA_MaxOffer] [decimal] (18, 2) NULL,
+[DOWTMA_Campain] [varchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DOWTMA_ClickCount] [int] NULL,
+[DOWTMA_RMR_ID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [WebPortal].[DOWTMA] ADD CONSTRAINT [PK_DOWTMA] PRIMARY KEY CLUSTERED  ([DOWTMA_ID]) ON [PRIMARY]
+GO
+ALTER TABLE [WebPortal].[DOWTMA] ADD CONSTRAINT [FK_DOWTMA_CMR] FOREIGN KEY ([DOWTMA_CMR_ID]) REFERENCES [dbo].[iO_Client_MasterReference] ([CMR_ID])
+GO
+ALTER TABLE [WebPortal].[DOWTMA] ADD CONSTRAINT [FK_DOWTMA_XRP] FOREIGN KEY ([DOWTMA_XRP_ID]) REFERENCES [dbo].[iO_Control_ProductMaster] ([XRP_ID])
+GO

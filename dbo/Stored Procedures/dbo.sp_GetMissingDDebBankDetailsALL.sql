@@ -1,3 +1,7 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
 CREATE PROCEDURE [dbo].[sp_GetMissingDDebBankDetailsALL]
 	@StatusCode tinyint output,
 	@StatusMessage varchar(8000) output

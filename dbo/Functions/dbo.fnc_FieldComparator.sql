@@ -1,3 +1,7 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
 CREATE FUNCTION [dbo].[fnc_FieldComparator](
 	@FirstValue VARCHAR(MAX),
 	@SecondValue VARCHAR(MAX),

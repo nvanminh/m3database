@@ -1,3 +1,8 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
 CREATE PROCEDURE [dbo].[spr_IdentifyDuplicateClients_Name_DOB]
 AS
 BEGIN

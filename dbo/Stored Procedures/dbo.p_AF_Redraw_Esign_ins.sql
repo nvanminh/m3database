@@ -13,7 +13,7 @@ CREATE PROCEDURE [dbo].[p_AF_Redraw_Esign_ins]
     @ContractVersion	nvarchar(40),
     @SignDateTime		datetime,
     @Ownership			nvarchar(50),
-    @New_RES_ID			varchar(40) OUTPUT
+    @New_RES_ID			varchar(40) NULL OUTPUT
 AS
 BEGIN
     --DECLARE @RMR_ID varchar(40);

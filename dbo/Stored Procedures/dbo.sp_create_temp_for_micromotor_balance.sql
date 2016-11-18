@@ -1,3 +1,8 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
 CREATE PROCEDURE [dbo].[sp_create_temp_for_micromotor_balance]
 AS
 IF object_id('[reporting_loan].dbo.temptbl_micromotor') IS NOT NULL

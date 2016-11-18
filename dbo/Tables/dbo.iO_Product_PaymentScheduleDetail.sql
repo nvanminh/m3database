@@ -33,7 +33,7 @@ CREATE TABLE [dbo].[iO_Product_PaymentScheduleDetail]
 [RPSD_SuspendedInterestBalance] [decimal] (18, 2) NULL
 ) ON [PRIMARY]
 GO
-ALTER TABLE [dbo].[iO_Product_PaymentScheduleDetail] ADD CONSTRAINT [PK__iO_Produ__8E2AB60062A9548A] PRIMARY KEY CLUSTERED  ([RPSD_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
+ALTER TABLE [dbo].[iO_Product_PaymentScheduleDetail] ADD CONSTRAINT [PK__iO_Produ__8E2AB600A96C06BA] PRIMARY KEY CLUSTERED  ([RPSD_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
 GO
 CREATE NONCLUSTERED INDEX [NonClusteredIndex-20131206-182536_Manual] ON [dbo].[iO_Product_PaymentScheduleDetail] ([RPSD_IDLink_Manual]) WITH (FILLFACTOR=85) ON [PRIMARY]
 GO

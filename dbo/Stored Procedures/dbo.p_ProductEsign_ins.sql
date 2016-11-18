@@ -13,7 +13,7 @@ CREATE PROCEDURE [dbo].[p_ProductEsign_ins]
     @ContractVersion	nvarchar(40),
     @CMR_ID				varchar(40),
     @Redraw_ID			varchar(40),
-    @New_RES_ID			varchar(40) OUTPUT
+    @New_RES_ID			varchar(40) NULL OUTPUT
 AS
 BEGIN
     DECLARE @New_ID varchar(40) = '{' + LOWER(NEWID()) + '}';

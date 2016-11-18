@@ -1,3 +1,12 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+
+
+
 -- =============================================
 -- Author:		Axcess Consulting
 -- Create date: 18/02/2008

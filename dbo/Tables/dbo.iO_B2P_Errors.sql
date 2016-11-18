@@ -14,7 +14,7 @@ CREATE TABLE [dbo].[iO_B2P_Errors]
 [PEme_ErrorStageDesc] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [PEme_ContextID] [varchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [PEme_ContextTable] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[PEme_ContextColumn] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[PEme_ContextColumn] [varchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[iO_B2P_Errors] ADD CONSTRAINT [PK_iO_B2P_Errors] PRIMARY KEY CLUSTERED  ([PEme_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]

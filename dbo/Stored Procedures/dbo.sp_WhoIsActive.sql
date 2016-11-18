@@ -1,3 +1,8 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
 /*********************************************************************************************
 Who Is Active? v11.11 (2012-03-22)
 (C) 2007-2012, Adam Machanic

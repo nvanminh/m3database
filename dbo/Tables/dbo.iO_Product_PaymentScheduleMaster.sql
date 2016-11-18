@@ -24,7 +24,7 @@ CREATE TABLE [dbo].[iO_Product_PaymentScheduleMaster]
 [RPSD_DetailRowsData] [nvarchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
-ALTER TABLE [dbo].[iO_Product_PaymentScheduleMaster] ADD CONSTRAINT [PK__iO_Produ__ED41804906B0EE69] PRIMARY KEY CLUSTERED  ([RPSM_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
+ALTER TABLE [dbo].[iO_Product_PaymentScheduleMaster] ADD CONSTRAINT [PK__iO_Produ__ED418049BD0353B3] PRIMARY KEY CLUSTERED  ([RPSM_ID]) WITH (FILLFACTOR=85) ON [PRIMARY]
 GO
 CREATE NONCLUSTERED INDEX [iO_Product_PaymentScheduleMaster_RMR] ON [dbo].[iO_Product_PaymentScheduleMaster] ([RPSM_IDLink_RMR]) WITH (FILLFACTOR=85) ON [PRIMARY]
 GO

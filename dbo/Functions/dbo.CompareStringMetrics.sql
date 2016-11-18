@@ -1,3 +1,8 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
 CREATE FUNCTION [dbo].[CompareStringMetrics](@firstword [nvarchar](255), @secondword [nvarchar](255))
 RETURNS TABLE
 AS
